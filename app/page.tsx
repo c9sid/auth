@@ -1,8 +1,6 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-// import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
-// import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 
 const Home = () => {
@@ -18,7 +16,7 @@ const Home = () => {
           </div>
           <div className="btn flex gap-4">
             <Button variant={"default"}>Click Me!</Button>
-            <Button variant={"outline"}>Click Me!</Button>
+            <Button variant={"outline"}>Visit more!</Button>
           </div>
         </div>
         <div className="carusel flex items-center justify-center md:w-1/2">
