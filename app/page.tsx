@@ -13,11 +13,11 @@ const Home = () => {
             <h1 className="text-4xl font-semibold text-primary">Learning.</h1>
           </div>
           <div className="para text-primary/90">
-            <p>Learning Auth is a Next.js practice site showcasing features like Clerk login, dark mode, and more. Explore seamless authentication and modern web functionalities designed to enhance user experience and developer skills. This website is like a normal site for a normal user but for developers... ❤️</p>
+            <p>This is a Next.js practice site showcasing features like Clerk login, dark mode, and more. Explore seamless authentication and modern web functionalities designed to enhance user experience and developer skills. This website is like a normal site for a normal user but for developers... ❤️</p>
           </div>
           <div className="btn flex gap-4">
             <Button variant={"default"}>Dummy Button</Button>
-            <Link href={'https://www.instagram.com/_s_i_d._d_h_a_r_t_h_/'}><Button variant={"outline"}>Know me!</Button></Link>
+            <Link href={'https://www.instagram.com/siddharthkumar____/'}><Button variant={"outline"}>Know me!</Button></Link>
           </div>
         </div>
         <div className="carusel flex items-center justify-center md:w-1/2">
