@@ -36,9 +36,6 @@ const NavbarMob = () => {
                     <Link href={'/'} className='hover:text-primary text-lg font-serif'>Sid</Link>
                 </div>
                 <div className="icons flex gap-3 justify-center items-center">
-                    <div>
-                    <ModeToggle />
-                    </div>
                     <div className='flex items-center justify-center'>
                     <SignedOut>
                         <SignInButton />

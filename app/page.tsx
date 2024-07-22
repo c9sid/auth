@@ -21,22 +21,6 @@ const Home = () => {
           </div>
         </div>
         <div className="carusel flex items-center justify-center md:w-1/2">
-        {/* <Carousel
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-      opts={{
-        loop: true,
-      }}
-      >
-        <CarouselContent>
-          <CarouselItem> <Image src={'/slider/image1.png'} alt="slider1" width={1000} height={500} className="w-full rounded-lg" /> </CarouselItem>
-          <CarouselItem> <Image src={'/slider/image2.png'} alt="slider1" width={1000} height={500} className="w-full rounded-lg" /> </CarouselItem>
-          <CarouselItem> <Image src={'/slider/image3.png'} alt="slider1" width={1000} height={500} className="w-full rounded-lg" /> </CarouselItem>
-        </CarouselContent>
-      </Carousel> */}
       <Image src={'/slider/chicken.png'} alt="main" width={400} height={400} />
         </div>
       </div>

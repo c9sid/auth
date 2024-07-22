@@ -42,9 +42,6 @@ const Navbar = () => {
                 }
             </div>
             <div className="icons flex gap-3 items-center justify-center">
-                <div>
-                <ModeToggle />
-                </div>
                 <div className='flex justify-center items-center'>
                 <SignedOut>
                     <SignInButton />

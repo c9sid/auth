@@ -8,6 +8,7 @@ import {
   ClerkProvider,
 } from '@clerk/nextjs'
 import { dark } from "@clerk/themes";
+import Footer from "@/components/Footer";
 
 const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800']});
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         <NavbarMob />
         {children}
+        <Footer />
         </ThemeProvider>
       </body>
     </html>
