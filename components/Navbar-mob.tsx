@@ -3,8 +3,14 @@
 import React, { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import { Menu, ShoppingBag, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { ModeToggle } from './DarkMode';
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+} from '@clerk/nextjs'
 
 const menulist = [
     {
@@ -25,12 +31,22 @@ const NavbarMob = () => {
                     <button onClick={() => setNavbar(!navbar)}>
                         {navbar ? (<X className='hover:text-primary transition-all hover:scale-110 cursor-pointer' />) : (<Menu className='hover:text-primary transition-all hover:scale-110 cursor-pointer' />)}
                     </button>
-                </div>  
-                <div className="logo">
-                <Link href={'/'} className='hover:text-primary text-lg font-serif'>Sid</Link>
                 </div>
-                <div className="icons flex gap-6">
-                <ModeToggle />
+                <div className="logo">
+                    <Link href={'/'} className='hover:text-primary text-lg font-serif'>Sid</Link>
+                </div>
+                <div className="icons flex gap-3 justify-center items-center">
+                    <div>
+                    <ModeToggle />
+                    </div>
+                    <div className='flex items-center justify-center'>
+                    <SignedOut>
+                        <SignInButton />
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
+                    </div>
                 </div>
             </div>
             <div className={`w-full fixed z-10 ease-in-out duration-300 ${navbar ? "translate-x-0" : "translate-x-full"}`}>

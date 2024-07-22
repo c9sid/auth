@@ -3,8 +3,13 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import { ShoppingBag } from 'lucide-react';
 import { ModeToggle } from './DarkMode';
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+} from '@clerk/nextjs'
 
 const menulist = [
     {
@@ -16,11 +21,11 @@ const menulist = [
 const Navbar = () => {
 
     const pathname = usePathname();
-
+    
     return (
         <div className='hidden md:flex items-center justify-between p-6 border-b'>
             <div className="logo">
-            <Link href={'/'} className='hover:text-primary text-lg font-serif'>Sid</Link>
+                <Link href={'/'} className='hover:text-primary text-lg font-serif'>Sid</Link>
             </div>
             <div className="menu flex gap-5">
                 {
@@ -36,8 +41,18 @@ const Navbar = () => {
                     })
                 }
             </div>
-            <div className="icons flex gap-6 items-center justify-center">
+            <div className="icons flex gap-3 items-center justify-center">
+                <div>
                 <ModeToggle />
+                </div>
+                <div className='flex justify-center items-center'>
+                <SignedOut>
+                    <SignInButton />
+                </SignedOut>
+                <SignedIn>
+                    <UserButton />
+                </SignedIn>
+                </div>
             </div>
         </div>
     )
